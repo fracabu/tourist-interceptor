@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-speedometer2"></i> Dashboard</h2>
+    {% if total_contacts == 0 %}
+        <a href="{{ url_for('import_contacts') }}" class="btn btn-primary">
+            <i class="bi bi-download"></i> Importa Contatti da dati.md
+        </a>
+    {% endif %}
+</div>
+
+<!-- Stats Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-primary">{{ total_contacts }}</h3>
+                <p class="text-muted mb-0">Contatti Totali</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-success">{{ status_stats.get('Cliente', 0) }}</h3>
+                <p class="text-muted mb-0">Clienti</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-info">{{ status_stats.get('Partner', 0) }}</h3>
+                <p class="text-muted mb-0">Partner</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-warning">{{ status_stats.get('Caldo', 0) }}</h3>
+                <p class="text-muted mb-0">Lead Caldi</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Status Distribution -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-graph-up"></i> Distribuzione per Status</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <span class="badge badge-freddo">Freddo</span>
+                    <span class="ms-2">{{ status_stats.get('Freddo', 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-tiepido">Tiepido</span>
+                    <span class="ms-2">{{ status_stats.get('Tiepido', 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-caldo">Caldo</span>
+                    <span class="ms-2">{{ status_stats.get('Caldo', 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-cliente">Cliente</span>
+                    <span class="ms-2">{{ status_stats.get('Cliente', 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-partner">Partner</span>
+                    <span class="ms-2">{{ status_stats.get('Partner', 0) }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-layers"></i> Distribuzione per Tier</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <span class="badge badge-tier-1">Tier 1 - Alta Priorità</span>
+                    <span class="ms-2">{{ tier_stats.get(1, 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-tier-2">Tier 2 - Media Priorità</span>
+                    <span class="ms-2">{{ tier_stats.get(2, 0) }}</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-tier-3">Tier 3 - Bassa Priorità</span>
+                    <span class="ms-2">{{ tier_stats.get(3, 0) }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contacts to Follow Today -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-bell"></i> Da Seguire Oggi</h5>
+            </div>
+            <div class="card-body">
+                {% if contacts_to_follow %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Organizzazione</th>
+                                    <th>Contatto</th>
+                                    <th>Prossima Azione</th>
+                                    <th>Data</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for contact in contacts_to_follow %}
+                                <tr>
+                                    <td>{{ contact.organization_name }}</td>
+                                    <td>{{ contact.contact_name }}</td>
+                                    <td>{{ contact.next_action_description or '-' }}</td>
+                                    <td>{{ contact.next_action_date.strftime('%d/%m/%Y') if contact.next_action_date else '-' }}</td>
+                                    <td>
+                                        <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-sm btn-primary">
+                                            Vedi
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class="text-muted">Nessun contatto da seguire oggi.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Contacts -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-clock-history"></i> Ultimi Contatti Aggiunti</h5>
+            </div>
+            <div class="card-body">
+                {% if recent_contacts %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Organizzazione</th>
+                                    <th>Contatto</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Tier</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for contact in recent_contacts %}
+                                <tr>
+                                    <td>{{ contact.organization_name }}</td>
+                                    <td>{{ contact.contact_name }}</td>
+                                    <td>{{ contact.email }}</td>
+                                    <td><span class="badge badge-{{ contact.status.lower() }}">{{ contact.status }}</span></td>
+                                    <td><span class="badge badge-tier-{{ contact.tier }}">Tier {{ contact.tier }}</span></td>
+                                    <td>
+                                        <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-sm btn-primary">
+                                            Vedi
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class="text-muted">Nessun contatto ancora.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

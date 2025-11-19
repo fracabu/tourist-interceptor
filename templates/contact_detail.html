@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}{{ contact.organization_name }} - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2>{{ contact.organization_name }}</h2>
+        <p class="text-muted">{{ contact.contact_name }}</p>
+    </div>
+    <div>
+        <a href="{{ url_for('generate_email_for_contact', contact_id=contact.id) }}" class="btn btn-success">
+            <i class="bi bi-envelope-plus"></i> Genera Email
+        </a>
+        <a href="{{ url_for('edit_contact', contact_id=contact.id) }}" class="btn btn-primary">
+            <i class="bi bi-pencil"></i> Modifica
+        </a>
+        <a href="{{ url_for('contacts') }}" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Torna alla lista
+        </a>
+    </div>
+</div>
+
+<!-- Info Card -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-person-badge"></i> Informazioni Contatto</h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <strong>Nome Contatto:</strong><br>
+                        {{ contact.contact_name or '-' }}
+                    </div>
+                    <div class="col-md-6">
+                        <strong>Ruolo:</strong><br>
+                        {{ contact.role or '-' }}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <strong>Email:</strong><br>
+                        {% if contact.email %}
+                            <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6">
+                        <strong>Telefono:</strong><br>
+                        {% if contact.phone %}
+                            <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <strong>LinkedIn:</strong><br>
+                        {% if contact.linkedin %}
+                            <a href="{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <strong>Indirizzo:</strong><br>
+                        {{ contact.address or '-' }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>Note:</strong><br>
+                        {{ contact.notes or '-' }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5><i class="bi bi-flag"></i> Status e Priorità</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <strong>Status:</strong><br>
+                    <span class="badge badge-{{ contact.status.lower() }} fs-6">{{ contact.status }}</span>
+                </div>
+                <div class="mb-3">
+                    <strong>Tier:</strong><br>
+                    <span class="badge badge-tier-{{ contact.tier }} fs-6">Tier {{ contact.tier }}</span>
+                </div>
+                <div class="mb-3">
+                    <strong>Priority Score:</strong><br>
+                    <span class="fs-4">{{ contact.priority_score }}</span>
+                </div>
+                <div class="mb-3">
+                    <strong>Ultimo Contatto:</strong><br>
+                    {{ contact.last_contact_date.strftime('%d/%m/%Y') if contact.last_contact_date else 'Mai contattato' }}
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-calendar-check"></i> Prossima Azione</h5>
+            </div>
+            <div class="card-body">
+                {% if contact.next_action_date %}
+                    <strong>Data:</strong> {{ contact.next_action_date.strftime('%d/%m/%Y') }}<br>
+                    <strong>Descrizione:</strong> {{ contact.next_action_description or '-' }}
+                {% else %}
+                    <p class="text-muted">Nessuna azione programmata</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Interactions -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5><i class="bi bi-chat-dots"></i> Storico Interazioni ({{ interactions|length }})</h5>
+                <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#addInteractionModal">
+                    <i class="bi bi-plus"></i> Aggiungi Interazione
+                </button>
+            </div>
+            <div class="card-body">
+                {% if interactions %}
+                    <div class="timeline">
+                        {% for interaction in interactions %}
+                        <div class="border-start border-3 border-primary ps-3 mb-3">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary">{{ interaction.interaction_type }}</span>
+                                    <small class="text-muted ms-2">{{ interaction.interaction_date.strftime('%d/%m/%Y %H:%M') }}</small>
+                                </div>
+                                {% if interaction.outcome %}
+                                    <span class="badge bg-secondary">{{ interaction.outcome }}</span>
+                                {% endif %}
+                            </div>
+                            <p class="mt-2 mb-0">{{ interaction.notes or 'Nessuna nota' }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted">Nessuna interazione registrata.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Interaction Modal -->
+<div class="modal fade" id="addInteractionModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Aggiungi Interazione</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" action="{{ url_for('add_interaction', contact_id=contact.id) }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Tipo Interazione *</label>
+                        <select name="interaction_type" class="form-select" required>
+                            <option value="Email">Email</option>
+                            <option value="Telefono">Telefono</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Persona">Di Persona</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Note</label>
+                        <textarea name="notes" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Esito</label>
+                        <select name="outcome" class="form-select">
+                            <option value="">-</option>
+                            <option value="Risposta positiva">Risposta positiva</option>
+                            <option value="Nessuna risposta">Nessuna risposta</option>
+                            <option value="Preventivo richiesto">Preventivo richiesto</option>
+                            <option value="Interessato">Interessato</option>
+                            <option value="Non interessato">Non interessato</option>
+                            <option value="Ricontattare">Da ricontattare</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                    <button type="submit" class="btn btn-primary">Salva Interazione</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

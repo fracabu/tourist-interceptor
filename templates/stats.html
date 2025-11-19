@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Statistiche - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+    <h2><i class="bi bi-graph-up"></i> Statistiche e Metriche</h2>
+    <p class="text-muted">Panoramica completa dell'attività B2B</p>
+</div>
+
+<!-- KPI Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body text-center">
+                <h3>{{ total_contacts }}</h3>
+                <p class="mb-0"><i class="bi bi-people"></i> Contatti Totali</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body text-center">
+                <h3>{{ clienti }}</h3>
+                <p class="mb-0"><i class="bi bi-check-circle"></i> Clienti Acquisiti</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body text-center">
+                <h3>{{ partner }}</h3>
+                <p class="mb-0"><i class="bi bi-handshake"></i> Partnership Attive</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body text-center">
+                <h3>{{ total_events }}</h3>
+                <p class="mb-0"><i class="bi bi-calendar-event"></i> Eventi Tracciati</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pipeline & Interactions -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-currency-euro"></i> Pipeline Value</h5>
+            </div>
+            <div class="card-body text-center">
+                <h2 class="text-success">€{{ "%.2f"|format(pipeline_value) }}</h2>
+                <p class="text-muted">Valore pipeline previsto (ponderato per probabilità)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-chat-dots"></i> Interazioni Totali</h5>
+            </div>
+            <div class="card-body text-center">
+                <h2 class="text-primary">{{ total_interactions }}</h2>
+                <p class="text-muted">Interazioni registrate con i contatti</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Obiettivi 90 Giorni -->
+<div class="card">
+    <div class="card-header">
+        <h5><i class="bi bi-target"></i> Obiettivi 90 Giorni (dalla strategia)</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <strong>📊 Contatti B2B Qualificati</strong>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: {{ (total_contacts / 60 * 100)|int if total_contacts < 60 else 100 }}%">
+                        {{ total_contacts }} / 60-80
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <strong>✅ Clienti Acquisiti</strong>
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: {{ (clienti / 5 * 100)|int if clienti < 5 else 100 }}%">
+                        {{ clienti }} / 5-8
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <strong>🤝 Partnership Strategiche</strong>
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {{ (partner / 3 * 100)|int if partner < 3 else 100 }}%">
+                        {{ partner }} / 3-5
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <strong>📅 Eventi Tracciati</strong>
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {{ (total_events / 20 * 100)|int if total_events < 20 else 100 }}%">
+                        {{ total_events }} / 20+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

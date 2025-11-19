@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Modifica {{ contact.organization_name }} - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-pencil"></i> Modifica Contatto</h2>
+    <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-secondary">
+        <i class="bi bi-x"></i> Annulla
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="{{ url_for('edit_contact', contact_id=contact.id) }}">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Organizzazione *</label>
+                    <input type="text" name="organization_name" class="form-control" value="{{ contact.organization_name }}" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nome Contatto</label>
+                    <input type="text" name="contact_name" class="form-control" value="{{ contact.contact_name or '' }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Ruolo</label>
+                    <input type="text" name="role" class="form-control" value="{{ contact.role or '' }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" value="{{ contact.email or '' }}">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input type="text" name="phone" class="form-control" value="{{ contact.phone or '' }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">LinkedIn</label>
+                    <input type="url" name="linkedin" class="form-control" value="{{ contact.linkedin or '' }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Indirizzo</label>
+                    <input type="text" name="address" class="form-control" value="{{ contact.address or '' }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Tier</label>
+                    <select name="tier" class="form-select">
+                        <option value="1" {% if contact.tier == 1 %}selected{% endif %}>Tier 1 - Alta Priorità</option>
+                        <option value="2" {% if contact.tier == 2 %}selected{% endif %}>Tier 2 - Media Priorità</option>
+                        <option value="3" {% if contact.tier == 3 %}selected{% endif %}>Tier 3 - Bassa Priorità</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Status</label>
+                    <select name="status" class="form-select">
+                        <option value="Freddo" {% if contact.status == 'Freddo' %}selected{% endif %}>Freddo</option>
+                        <option value="Tiepido" {% if contact.status == 'Tiepido' %}selected{% endif %}>Tiepido</option>
+                        <option value="Caldo" {% if contact.status == 'Caldo' %}selected{% endif %}>Caldo</option>
+                        <option value="Cliente" {% if contact.status == 'Cliente' %}selected{% endif %}>Cliente</option>
+                        <option value="Partner" {% if contact.status == 'Partner' %}selected{% endif %}>Partner</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Note</label>
+                    <textarea name="notes" class="form-control" rows="4">{{ contact.notes or '' }}</textarea>
+                </div>
+            </div>
+
+            <hr>
+            <h5 class="mb-3">Prossima Azione</h5>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Data Prossima Azione</label>
+                    <input type="date" name="next_action_date" class="form-control" value="{{ contact.next_action_date.strftime('%Y-%m-%d') if contact.next_action_date else '' }}">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Descrizione Azione</label>
+                    <input type="text" name="next_action_description" class="form-control" value="{{ contact.next_action_description or '' }}">
+                </div>
+            </div>
+
+            <div class="text-end">
+                <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-secondary">Annulla</a>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-save"></i> Salva Modifiche
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

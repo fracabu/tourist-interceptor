@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Genera Email per {{ contact.organization_name }}{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2><i class="bi bi-envelope-plus"></i> Genera Email Personalizzata</h2>
+        <p class="text-muted">{{ contact.organization_name }} - {{ contact.contact_name }}</p>
+    </div>
+    <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Torna al Contatto
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-gear"></i> Configurazione Email</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" action="{{ url_for('generate_email_for_contact', contact_id=contact.id) }}">
+                    <div class="mb-4">
+                        <label class="form-label"><strong>Tipo di Email *</strong></label>
+                        <select name="template_type" class="form-select" required>
+                            <option value="first_contact">Prima Presentazione (Cold Email)</option>
+                            <option value="follow_up">Follow-up (nessuna risposta)</option>
+                            <option value="quote_request">Invio Preventivo</option>
+                            <option value="partnership">Proposta Partnership</option>
+                            <option value="event_specific">Proposta per Evento Specifico</option>
+                        </select>
+                        <small class="text-muted">L'email sarà personalizzata automaticamente in base al tipo di organizzazione</small>
+                    </div>
+
+                    <hr>
+                    <h6 class="mb-3">I Tuoi Dati (Firma)</h6>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Il Tuo Nome</label>
+                            <input type="text" name="user_name" class="form-control" placeholder="Es. Mario Rossi">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">La Tua Email</label>
+                            <input type="email" name="user_email" class="form-control" placeholder="Es. info@romacaputmundi.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Il Tuo Telefono</label>
+                        <input type="text" name="user_phone" class="form-control" placeholder="Es. +39 06 1234567">
+                    </div>
+
+                    <hr>
+                    <h6 class="mb-3">Note Personalizzate (Opzionale)</h6>
+
+                    <div class="mb-3">
+                        <label class="form-label">Aggiungi Note Specifiche</label>
+                        <textarea name="custom_notes" class="form-control" rows="4" placeholder="Es. 'Ho notato che organizzate l'evento X il prossimo mese...' oppure dettagli particolari da menzionare"></textarea>
+                        <small class="text-muted">Queste note verranno inserite nel corpo dell'email</small>
+                    </div>
+
+                    <div class="text-end">
+                        <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-secondary">Annulla</a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-magic"></i> Genera Email
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h6><i class="bi bi-info-circle"></i> Info Contatto</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>Organizzazione:</strong><br>{{ contact.organization_name }}</p>
+                <p><strong>Nome:</strong><br>{{ contact.contact_name or '-' }}</p>
+                <p><strong>Ruolo:</strong><br>{{ contact.role or '-' }}</p>
+                <p><strong>Email:</strong><br>{{ contact.email or '-' }}</p>
+                <p><strong>Tier:</strong><br><span class="badge badge-tier-{{ contact.tier }}">Tier {{ contact.tier }}</span></p>
+                <p><strong>Status:</strong><br><span class="badge badge-{{ contact.status.lower() }}">{{ contact.status }}</span></p>
+            </div>
+        </div>
+
+        <div class="alert alert-info">
+            <i class="bi bi-lightbulb"></i> <strong>Come funziona?</strong><br>
+            L'email viene generata automaticamente personalizzata in base a:
+            <ul class="mt-2 mb-0">
+                <li>Tipo di organizzazione</li>
+                <li>Ruolo del contatto</li>
+                <li>Strategia B2B del documento</li>
+            </ul>
+            Potrai copiarla e incollarla nella tua email Aruba.
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Nuovo Contatto - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-person-plus"></i> Nuovo Contatto</h2>
+    <a href="{{ url_for('contacts') }}" class="btn btn-secondary">
+        <i class="bi bi-x"></i> Annulla
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="{{ url_for('new_contact') }}">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Organizzazione *</label>
+                    <input type="text" name="organization_name" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nome Contatto</label>
+                    <input type="text" name="contact_name" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Ruolo</label>
+                    <input type="text" name="role" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">LinkedIn</label>
+                    <input type="url" name="linkedin" class="form-control" placeholder="https://linkedin.com/in/...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Indirizzo</label>
+                    <input type="text" name="address" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Tier</label>
+                    <select name="tier" class="form-select">
+                        <option value="1">Tier 1 - Alta Priorità</option>
+                        <option value="2" selected>Tier 2 - Media Priorità</option>
+                        <option value="3">Tier 3 - Bassa Priorità</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">Status</label>
+                    <select name="status" class="form-select">
+                        <option value="Freddo" selected>Freddo</option>
+                        <option value="Tiepido">Tiepido</option>
+                        <option value="Caldo">Caldo</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Partner">Partner</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Note</label>
+                    <textarea name="notes" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="text-end">
+                <a href="{{ url_for('contacts') }}" class="btn btn-secondary">Annulla</a>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-save"></i> Crea Contatto
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

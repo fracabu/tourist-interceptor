@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Email Generata - {{ contact.organization_name }}{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2><i class="bi bi-envelope-check"></i> Email Generata!</h2>
+        <p class="text-muted">Per {{ contact.organization_name }}</p>
+    </div>
+    <div>
+        <a href="{{ url_for('generate_email_for_contact', contact_id=contact.id) }}" class="btn btn-warning">
+            <i class="bi bi-arrow-clockwise"></i> Genera Nuova Email
+        </a>
+        <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Torna al Contatto
+        </a>
+    </div>
+</div>
+
+<div class="alert alert-success">
+    <i class="bi bi-check-circle"></i> <strong>Email generata con successo!</strong><br>
+    Copia il testo qui sotto e incollalo nella tua email Aruba. L'email è già personalizzata per {{ contact.contact_name or contact.organization_name }}.
+</div>
+
+<!-- Oggetto Email -->
+<div class="card mb-3">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0"><i class="bi bi-tag"></i> Oggetto Email</h5>
+        <button class="btn btn-sm btn-light" onclick="copySubject()">
+            <i class="bi bi-clipboard"></i> Copia Oggetto
+        </button>
+    </div>
+    <div class="card-body">
+        <div id="email-subject" class="bg-light p-3 rounded" style="font-family: monospace;">
+            {{ email_data.subject }}
+        </div>
+    </div>
+</div>
+
+<!-- Corpo Email -->
+<div class="card mb-4">
+    <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0"><i class="bi bi-envelope-open"></i> Corpo Email</h5>
+        <button class="btn btn-sm btn-light" onclick="copyBody()">
+            <i class="bi bi-clipboard"></i> Copia Corpo
+        </button>
+    </div>
+    <div class="card-body">
+        <div id="email-body" class="bg-light p-4 rounded" style="font-family: monospace; white-space: pre-wrap; line-height: 1.6;">{{ email_data.body }}</div>
+    </div>
+</div>
+
+<!-- Pulsante Copia Tutto -->
+<div class="text-center mb-4">
+    <button class="btn btn-lg btn-primary" onclick="copyAll()">
+        <i class="bi bi-clipboard-check"></i> Copia Tutto (Oggetto + Corpo)
+    </button>
+</div>
+
+<!-- Istruzioni -->
+<div class="card">
+    <div class="card-header">
+        <h5><i class="bi bi-question-circle"></i> Come Procedere</h5>
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>Clicca su <strong>"Copia Tutto"</strong> per copiare sia oggetto che corpo dell'email</li>
+            <li>Apri la tua email Aruba in un'altra finestra</li>
+            <li>Crea una nuova email e indirizzala a: <strong><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></strong></li>
+            <li>Incolla l'oggetto nel campo "Oggetto"</li>
+            <li>Incolla il corpo nel campo del messaggio</li>
+            <li>Rileggi, personalizza ulteriormente se necessario e invia!</li>
+            <li>Torna nel tool e <a href="{{ url_for('contact_detail', contact_id=contact.id) }}">aggiungi un'interazione</a> per tracciare l'invio</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Toast di conferma copia -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="copyToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="bi bi-check-circle"></i> Copiato negli appunti!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+function copySubject() {
+    const subject = document.getElementById('email-subject').textContent;
+    navigator.clipboard.writeText(subject).then(() => {
+        showToast();
+    });
+}
+
+function copyBody() {
+    const body = document.getElementById('email-body').textContent;
+    navigator.clipboard.writeText(body).then(() => {
+        showToast();
+    });
+}
+
+function copyAll() {
+    const subject = document.getElementById('email-subject').textContent;
+    const body = document.getElementById('email-body').textContent;
+    const fullText = `OGGETTO:\n${subject}\n\n${'='.repeat(50)}\n\nCORPO EMAIL:\n${body}`;
+
+    navigator.clipboard.writeText(fullText).then(() => {
+        showToast();
+    });
+}
+
+function showToast() {
+    const toastEl = document.getElementById('copyToast');
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
+}
+</script>
+{% endblock %}

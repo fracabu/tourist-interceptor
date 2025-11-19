@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Contatti - Tourist Interceptor CRM{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-people"></i> Contatti B2B</h2>
+    <a href="{{ url_for('new_contact') }}" class="btn btn-primary">
+        <i class="bi bi-person-plus"></i> Nuovo Contatto
+    </a>
+</div>
+
+<!-- Filtri -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" action="{{ url_for('contacts') }}" class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label">Cerca</label>
+                <input type="text" name="search" class="form-control" placeholder="Nome, email..." value="{{ request.args.get('search', '') }}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Tier</label>
+                <select name="tier" class="form-select">
+                    <option value="">Tutti</option>
+                    <option value="1" {% if request.args.get('tier') == '1' %}selected{% endif %}>Tier 1</option>
+                    <option value="2" {% if request.args.get('tier') == '2' %}selected{% endif %}>Tier 2</option>
+                    <option value="3" {% if request.args.get('tier') == '3' %}selected{% endif %}>Tier 3</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Status</label>
+                <select name="status" class="form-select">
+                    <option value="">Tutti</option>
+                    <option value="Freddo" {% if request.args.get('status') == 'Freddo' %}selected{% endif %}>Freddo</option>
+                    <option value="Tiepido" {% if request.args.get('status') == 'Tiepido' %}selected{% endif %}>Tiepido</option>
+                    <option value="Caldo" {% if request.args.get('status') == 'Caldo' %}selected{% endif %}>Caldo</option>
+                    <option value="Cliente" {% if request.args.get('status') == 'Cliente' %}selected{% endif %}>Cliente</option>
+                    <option value="Partner" {% if request.args.get('status') == 'Partner' %}selected{% endif %}>Partner</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-search"></i> Filtra
+                </button>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <a href="{{ url_for('contacts') }}" class="btn btn-secondary w-100">
+                    <i class="bi bi-x"></i> Reset
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Lista Contatti -->
+<div class="card">
+    <div class="card-body">
+        {% if contacts %}
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Organizzazione</th>
+                            <th>Contatto</th>
+                            <th>Ruolo</th>
+                            <th>Email</th>
+                            <th>Telefono</th>
+                            <th>Status</th>
+                            <th>Tier</th>
+                            <th>Score</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for contact in contacts %}
+                        <tr>
+                            <td><strong>{{ contact.organization_name }}</strong></td>
+                            <td>{{ contact.contact_name or '-' }}</td>
+                            <td><small>{{ contact.role or '-' }}</small></td>
+                            <td>
+                                {% if contact.email %}
+                                    <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                            <td>{{ contact.phone or '-' }}</td>
+                            <td><span class="badge badge-{{ contact.status.lower() }}">{{ contact.status }}</span></td>
+                            <td><span class="badge badge-tier-{{ contact.tier }}">T{{ contact.tier }}</span></td>
+                            <td>{{ contact.priority_score }}</td>
+                            <td>
+                                <a href="{{ url_for('contact_detail', contact_id=contact.id) }}" class="btn btn-sm btn-primary">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted mt-3">{{ contacts|length }} contatti trovati</p>
+        {% else %}
+            <p class="text-muted">Nessun contatto trovato.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
