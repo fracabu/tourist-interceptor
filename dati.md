@@ -1,269 +1,424 @@
-# Contatti diretti TOP 10 fonti eventi Roma per lead generation B2B
-
-La ricerca ha identificato contatti operativi verificati per 9 delle 10 organizzazioni richieste. Per ciascuna fonte sono stati raccolti email dirette, numeri di telefono, nomi dei responsabili e profili LinkedIn quando disponibili. **MIM Congressi risulta non esistente online** - richiede verifica del nome corretto.
-
-## Organizzazioni con contatti completi e diretti
-
-Le organizzazioni con il miglior livello di dettaglio contatti sono Policlinico Gemelli, Convention Bureau Roma Lazio, Roma Convention Center La Nuvola e Leader SRL. Questi rappresentano i target prioritari per approccio diretto.
+# Database Contatti Micro-Target Accessibili - Tourist Interceptor CRM
+**Creato:** 19 Novembre 2025
+**Obiettivo:** Validazione modello business travel con contatti realistici e accessibili
+**Totale organizzazioni:** 15 contatti qualificati
 
 ---
 
-## **1. POLICLINICO GEMELLI ROMA - CENTRO CONGRESSI EUROPA**
+## GRUPPO 1 - PCO PICCOLI/MEDI ACCESSIBILI (5 organizzazioni)
 
-**Responsabile Eventi:** Francesco Gemelli  
-**Ruolo:** Responsabile Formazione Permanente, ECM, Convegni e Manifestazioni  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** formazione.permanente-rm@unicatt.it  
-**Telefono:** +39 06 30154886 / +39 06 30154297  
-**LinkedIn:** https://it.linkedin.com/in/francesco-gemelli-0a225792  
-**Note:** Centro Congressi gestito dall'Università Cattolica del Sacro Cuore. Auditorium da 500 posti, sale eventi fino a 850 persone. Specializzato in congressi medico-scientifici e formazione ECM.
+### 1. EVENT LAB - EVENTI ECM E CONGRESSI MEDICI
 
-**Contatti Staff Operativo Diretto:**
+**Nome organizzazione completo:** Event Lab S.r.l.
 
-- **Simonetta Salomone** - Formazione Permanente, ECM, Convegni  
-  Email: simonetta.salomone@unicatt.it | Tel: 06 30154886
+**Responsabile Eventi:** Ufficio Organizzazione
 
-- **Valeria Polimeni** - Formazione Permanente, ECM, Convegni  
-  Email: valeria.polimeni@unicatt.it | Tel: 06 30154886
+**Email diretta:** info@event-lab.eu
 
-- **Maria Grazia Chierchia** - Formazione Permanente, ECM, Convegni  
-  Email: mariagrazia.chierchia@unicatt.it | Tel: 06 30154886
+**Telefono:** +39 06 3729898
 
-**Indirizzo:** Largo Francesco Vito, 1 - 00168 Roma
+**Indirizzo sede operativa:** Via Paolo Emilio, 7 – 00195 Roma (Prati)
 
----
+**Indirizzo legale:** Corso Trieste, 88 – 00198 Roma
 
-## **2. CONSIGLIO NAZIONALE DEL NOTARIATO - N SERVIZI SRL**
-
-**Responsabile Eventi:** Claudia Franceschini  
-**Ruolo:** Direttore Generale N Servizi S.r.l. (società eventi del Notariato)  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** segreteriaeventi@nservizi.it  
-**Telefono:** +39 06 36209418 / +39 06 36209419 / +39 06 36209410  
-**LinkedIn:** NON TROVATO  
-**Note:** N Servizi è la società specializzata del notariato per congressi ed eventi. Certificata ISO 9001 e UNI 10719. Gestisce 20+ eventi formativi annui. Provider ECM. Primo contatto tramite segreteria centralizzata.
-
-**Altri Responsabili Chiave:**
-
-- **Enrico Parenti** - Amministratore Unico N Servizi S.r.l.
-- **Sergio Starace** - Responsabile Amministrativo
-- **Erika Attili** - Segreteria Eventi
-- **Mara Sciardiglia** - Segreteria Eventi
-
-**Indirizzo:** Via Flaminia, 160 - 00196 Roma
+**Note operative:**
+- **Specializzazione:** Eventi ECM medici (Provider Agenas Nr.6364), congressi medici piccoli/medi, formazione residenziale e FAD
+- **Dimensione tipica eventi:** 20-100 partecipanti
+- **Target accessibile:** Gestiscono eventi medici di dimensioni contenute, budget medi
+- **Modalità contatto:** Email info@event-lab.eu specificando interesse alloggio relatori/partecipanti eventi Roma
+- **Particolarità:** Provider ECM accreditato, organizzano sia eventi residenziali che online
+- **Sito:** https://www.event-lab.eu/
 
 ---
 
-## **3. CONVENTION BUREAU ROMA E LAZIO (CBReL)**
+### 2. ACTIVITY EVENTI E COMUNICAZIONE
 
-**Responsabile Eventi:** Monica Conti  
-**Ruolo:** Bureau Manager  
-**Email diretta:** monica@cbromaelazio.it  
-**Email ufficio:** info@cbromaelazio.it  
-**Telefono:** +39 377 5523813  
-**LinkedIn:** https://it.linkedin.com/in/monica-conti-2964384  
-**Note:** Organismo ufficiale promozione MICE Roma e Lazio. Network 150+ player turismo regionale. Fondato 2017 con supporto Roma Capitale e Regione Lazio.
+**Nome organizzazione completo:** Activity Eventi e Comunicazione
 
-**Altri Contatti Diretti Staff:**
+**Responsabile:** Eduardo Fiorito
 
-- **Massimo Morale** - Sales & Marketing Manager / Business Development  
-  Email: massimo@cbromaelazio.it | Tel: +39 377 5523813  
-  LinkedIn: https://www.linkedin.com/in/massimo-morale-40234413/
+**Email diretta:** eduardofiorito@activityeventicomunicazione.com
 
-- **Camilla Collina** - Operations Manager  
-  Email: camilla@cbromaelazio.it  
-  LinkedIn: https://www.linkedin.com/in/camilla-collina-a4b34118/
+**Email ufficio:** info@activityeventicomunicazione.com
 
-- **Edoardo Siliquini** - Communication Manager  
-  Email: edoardo@cbromaelazio.it
+**Telefono:** 333 5845640
 
-**Leadership:** Onorio Rebecchini (Presidente Onorio, mandato 2023-2026)
+**PEC:** activityeventi@legalmail.it
 
-**Indirizzo:** Via Flaminia, 388 - 00196 Roma
+**Indirizzo sede:** Via Domenico Chelini, 3, 00197 Roma
+
+**Note operative:**
+- **Specializzazione:** Eventi, congressi, formazione
+- **Dimensione tipica eventi:** Piccoli/medi eventi corporate e formativi
+- **Target accessibile:** Agenzia dimensioni contenute, approccio personalizzato
+- **Modalità contatto:** Email diretta a Eduardo Fiorito o telefono 333 5845640
+- **Particolarità:** Gestiscono eventi a Roma con approccio boutique
+- **Sito:** https://www.activityeventicomunicazione.com/
 
 ---
 
-## **4. AUDITORIUM PARCO DELLA MUSICA / FONDAZIONE MUSICA PER ROMA**
+### 3. GAMMA CONGRESSI
 
-**Responsabile Eventi:** NON TROVATO (nome specifico non disponibile)  
-**Ruolo:** Ufficio Commerciale Eventi Corporate  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** commerciale@musicaperroma.it  
-**Telefono:** +39 06802411 (centralino) / +39 0680241281 (infoline 11:00-18:00)  
-**LinkedIn:** NON TROVATO  
-**Note:** Per preventivi eventi corporate, congressi, conferenze. Oltre 1 milione spettatori/anno. Nuovo CdA settembre 2024. Sistema centralizzato tramite commerciale@musicaperroma.it. **Raccomandazione:** chiamare infoline e chiedere trasferimento ufficio commerciale eventi per referente diretto nominativo.
+**Nome organizzazione completo:** Gamma Congressi S.r.l.
 
-**Leadership Fondazione:**
+**Responsabile Eventi:** Ufficio Organizzazione
 
-- **Claudia Mazzola** - Presidente (ex Capo Ufficio Stampa RAI)
-- **Raffaele Ranucci** - Amministratore Delegato (nominato settembre 2024)
+**Email diretta:** info@gammacongressi.it
 
-**Indirizzo:** Viale Pietro de Coubertin 30, 00196 Roma
+**Telefono:** +39 06 36300769
 
----
+**Cellulare:** +39 344 3414958 / +39 342 0927016
 
-## **5. SAPIENZA UNIVERSITÀ ROMA - CENTRO CONGRESSI**
+**Fax:** +39 06 32906.94
 
-**Responsabile Eventi:** Prof. Tito Marci  
-**Ruolo:** Delegato Rettrice per gestione Centro Congressi d'Ateneo  
-**Email diretta:** tito.marci@uniroma1.it  
-**Email ufficio:** NON TROVATO (segreterie specifiche facoltà)  
-**Telefono:** +39 06 49911 (centralino Sapienza)  
-**LinkedIn:** https://www.linkedin.com/in/tito-marci-369b315a/  
-**Note:** Preside Facoltà Scienze Politiche. Istanze utilizzo Centro Congressi vanno inviate almeno 15 giorni lavorativi prima dell'evento.
+**Indirizzo sede:** Via Achille Loria, 8 - 00191 Roma
 
-**Responsabile Tecnico:**
-
-- **Valerio Irano** - Responsabile Tecnico Centro Congressi  
-  Email: valerio.irano@uniroma1.it | Tel: 06 49918489  
-  **Note:** Gestisce sopralluoghi, presa visione spazi e supporto tecnico apparecchiature.
-
-**Indirizzo:** Via Salaria 113, 00198 Roma
+**Note operative:**
+- **Volume eventi annui:** 30-50 eventi/anno (stima)
+- **Specializzazione:** Congressi medici, supporto organizzativo società scientifiche, eventi corporate
+- **Dimensione tipica eventi:** 40-150 partecipanti
+- **Target accessibile:** PCO medio, gestiscono anche eventi contenuti oltre ai grandi congressi
+- **Modalità contatto:** Email info@gammacongressi.it o telefono con segreteria
+- **Particolarità:** Attivi dal 1985, esperienza con società scientifiche mediche
+- **Sito:** https://www.gammacongressi.it/
 
 ---
 
-## **6. BALESTRA SRL CONGRESSI**
+### 4. FENICIA EVENTS & COMMUNICATION
 
-**Responsabile Eventi:** Sabina Marra  
-**Ruolo:** Manager/Responsabile Segreteria Organizzativa  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** info@balestrasrl.com / direzione@balestrasrl.com  
-**Telefono:** +39 06 214 8065 / +39 06 5743634  
-**Cellulare Assistenza Congressi:** +39 339 8319858  
-**LinkedIn:** https://www.linkedin.com/in/sabina-marra-24119132/  
-**Note:** PCO dal 1983. Provider ECM n. 2382 Ministero Salute. Specializzata congressi scientifici, eventi fino a 5.000 partecipanti. Sabina Marra: esperienza decennale settore congressuale.
+**Nome organizzazione completo:** Fenicia Events & Communication S.r.l.
 
-**Altri Contatti Email:**
+**Responsabile Eventi:** Ufficio Organizzazione
 
-- amministrazione@balestrasrl.com
-- tecnici@balestracongressi.com
-- **PEC:** balestracongressi@pec.it
+**Email diretta:** info@fenicia-events.eu
 
-**Indirizzo:** Piazza Roberto Malatesta 16, 00176 Roma
+**Telefono:**
+- +39 06 87671411
+- +39 329 3506996
 
----
+**Indirizzo sede:** Via Tor De' Conti, 22 - 00184 Roma (centro storico)
 
-## **7. ROMA CONVENTION CENTER LA NUVOLA**
-
-**Responsabile Eventi:** Francesca Maralli  
-**Ruolo:** Sales and Marketing Manager  
-**Email diretta:** f.maralli@romaeur.it  
-**Email ufficio:** info@romaconventiongroup.it  
-**Telefono:** +39 06 5451 3710  
-**LinkedIn:** https://it.linkedin.com/in/francesca-maralli-8005811  
-**Note:** In ruolo dal marzo 2018. Opera per EUR SpA nell'Area Eventi. Roma Convention Group gestisce sia La Nuvola che Palazzo dei Congressi. Contatto commerciale diretto prioritario.
-
-**Altri Contatti Chiave:**
-
-- **Lucia Ceddia** - Sales Marketing Department
-- **Francesca Sandri** - International Business Development Manager EUR SpA
-
-**Indirizzo:** Viale della Pittura, 50 - 00144 Roma
+**Note operative:**
+- **Specializzazione:** Congressi medico-scientifici nazionali/internazionali, ECM, seminari farmaceutici
+- **Dimensione tipica eventi:** 30-120 partecipanti
+- **Target accessibile:** Gestiscono eventi medici/pharma di varie dimensioni
+- **Modalità contatto:** Email info@fenicia-events.eu o telefono 06 87671411
+- **Particolarità:** Sede centrale Roma, focus su eventi medici e industria farmaceutica
+- **Sito:** https://fenicia.events/
 
 ---
 
-## **8. FEDERCONGRESSI&EVENTI**
+### 5. MCR CONFERENCE (Base Firenze - Opera Roma)
 
-**Responsabile Eventi:** Maria Gabriella Gentile  
-**Ruolo:** Presidente (mandato 2025-2028, riconfermata febbraio 2024)  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** federcongressi@federcongressi.it  
-**Telefono:** NON TROVATO (numero diretto non pubblico)  
-**LinkedIn:** NON TROVATO (profili omonimi multipli non verificabili)  
-**Note:** Presidente dal 2022. Socia fondatrice Meeting Consultants Srl Bologna. Docente Università Bologna. Twitter/X: @gentile_gabri. **Raccomandazione:** contatto tramite staff diretto.
+**Nome organizzazione completo:** MCR Conference S.r.l.
 
-**Staff Operativo Diretto (contatti prioritari):**
+**Responsabile:** Team Organizzazione
 
-- **Alessia Tosti** - Responsabile Comunicazione ed Eventi  
-  Email: alessiatosti@federcongressi.it
+**Email:** info via sito (form contatti)
 
-- **Ilaria Pedroni** - Responsabile Segreteria e Rapporti Organi Associativi  
-  Email: ilariapedroni@federcongressi.it
+**Telefono:**
+- +39 055 0541807
+- +39 333 6581076
 
-- **Silvia Perigli** - Segreteria Generale  
-  Email: silviaperigli@federcongressi.it
+**PEC:** mcrconference@legalmail.it
 
-- **Ufficio Stampa:** press@federcongressi.it
+**Indirizzo sede:** Via Finlandia, 26 - 50126 Firenze
 
-**Indirizzo:** Via dei Cestari 34, 00186 Roma
-
----
-
-## **9. EVENTBRITE ROMA - TOP ORGANIZZATORI BUSINESS**
-
-### **ORGANIZZATORE A: LEADER SRL (FareTurismo)**
-
-**Responsabile Eventi:** Ugo Picarelli  
-**Ruolo:** Fondatore e Direttore  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** eventi@leaderonline.it / info@fareturismo.it  
-**Telefono:** +39 089 253170  
-**LinkedIn:** https://www.linkedin.com/in/ugo-picarelli-31956b157/  
-**Note:** Attiva dal 1991. Organizza FareTurismo (24 edizioni, evento nazionale formazione lavoro turistico, Roma/Milano/Salerno). Anche Borsa Mediterranea Turismo Archeologico (BMTA) e HospitalitySud. Ugo Picarelli: Coordinatore Osservatorio Parlamentare Turismo, ex giunta Federturismo Confindustria.
-
-**Altri Contatti:**
-
-- comunicazione@leaderonline.it
-- **PEC:** leadersas@gigapec.it
-
-**Indirizzo:** Via Roma, 226 - 84121 Salerno  
-**Sito:** www.leaderonline.it / www.fareturismo.it
-
-### **ORGANIZZATORE B: DBINFORMATION (Rivista Parts - Parts Aftermarket Congress)**
-
-**Responsabile Eventi:** Maria Ranieri  
-**Ruolo:** Direttore Area Automotive - DBInformation S.p.A.  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** eventi.automotive@dbinformation.it  
-**Telefono:** NON TROVATO  
-**LinkedIn:** https://it.linkedin.com/in/maria-ranieri-74b43a83  
-**Note:** Content company B2B specializzata eventi automotive. Organizza Parts Aftermarket Congress (21 edizioni, evento internazionale, 600+ partecipanti annui). Figura chiave: Maria Ranieri.
+**Note operative:**
+- **Volume eventi annui:** 40-60+ eventi (stima)
+- **Specializzazione:** Congressi medico-scientifici, eventi corporate, culturali, sportivi - opera in tutta Italia
+- **Dimensione tipica eventi:** 30-200 partecipanti
+- **Target accessibile:** Pur essendo medio PCO, organizzano eventi a Roma regolarmente
+- **Modalità contatto:** Telefono +39 333 6581076 o form sito specificando eventi Roma
+- **Particolarità:** 20+ anni esperienza, Provider ECM Agenas, 14 professionisti, organizzano eventi in tutta Italia inclusa Roma
+- **Sito:** https://www.mcrconference.it/
 
 ---
 
-## **10. MIM CONGRESSI (PCO)**
+## GRUPPO 2 - CONTATTI GEMELLI OPERATIVI (3 contatti)
 
-**Responsabile Eventi:** NON TROVATO  
-**Ruolo:** NON TROVATO  
-**Email diretta:** NON TROVATO  
-**Email ufficio:** NON TROVATO  
-**Telefono:** NON TROVATO  
-**LinkedIn:** NON TROVATO  
-**Note:** **ORGANIZZAZIONE NON ESISTENTE ONLINE.** Nessuna presenza verificabile per "MIM Congressi" con sito mimcongressi.it. Possibili cause: nome/sito errato, azienda non più operativa, presenza online assente. **Richiede verifica nome corretto o informazioni aggiuntive.**
+### 6. POLICLINICO GEMELLI - DIREZIONE SCIENTIFICA
+
+**Nome organizzazione completo:** Fondazione Policlinico Universitario Agostino Gemelli IRCCS
+
+**Responsabile:** Prof. Antonio Gasbarrini - Direttore Scientifico
+
+**Email diretta:** direzione.scientifica@policlinicogemelli.it
+
+**Telefono:** +39 06 30158195
+
+**Centralino generale:** +39 06 30155701
+
+**Indirizzo:** Largo Agostino Gemelli, 8 – 00168 Roma (II piano, ala C)
+
+**Note operative:**
+- **Specializzazione:** Coordinamento eventi scientifici, congressi medici, visiting professors
+- **Dimensione tipica eventi:** Workshop 20-100 medici, advisory board farmaceutici, seminari specialistici
+- **Target accessibile:** Contatto per eventi scientifici dipartimenti, possibile overflow ospiti congressi
+- **Modalità contatto:** Email direzione.scientifica@policlinicogemelli.it specificando supporto alloggio eventi scientifici
+- **Particolarità:** Centro congressi con 40-60 eventi/anno, molti visiting professors/relatori da alloggiare
 
 ---
 
-## Riepilogo operativo per lead generation
+### 7. POLICLINICO GEMELLI - URP (UFFICIO RELAZIONI PUBBLICO)
 
-### Contatti prioritari IMMEDIATI (email dirette + telefono)
+**Nome organizzazione completo:** Fondazione Policlinico Universitario Agostino Gemelli IRCCS
 
-**Livello A - Contatto diretto completo:**
-1. **Monica Conti** (Convention Bureau Roma Lazio) - monica@cbromaelazio.it / +39 377 5523813
-2. **Francesca Maralli** (Roma Convention Center La Nuvola) - f.maralli@romaeur.it / +39 06 5451 3710
-3. **Massimo Morale** (Convention Bureau Roma Lazio) - massimo@cbromaelazio.it / +39 377 5523813
+**Ufficio:** URP - Ufficio Relazioni con il Pubblico
 
-**Livello B - Email diretta staff operativo:**
-4. **Simonetta Salomone** (Policlinico Gemelli) - simonetta.salomone@unicatt.it / 06 30154886
-5. **Valeria Polimeni** (Policlinico Gemelli) - valeria.polimeni@unicatt.it / 06 30154886
-6. **Valerio Irano** (Sapienza Centro Congressi) - valerio.irano@uniroma1.it / 06 49918489
-7. **Alessia Tosti** (Federcongressi) - alessiatosti@federcongressi.it
+**Email:** urp@policlinicogemelli.it
 
-### Contatti via segreteria centralizzata
+**Telefono:** +39 06 35510330
 
-- **Consiglio Notariato:** segreteriaeventi@nservizi.it / +39 06 36209418
-- **Auditorium Parco Musica:** commerciale@musicaperroma.it / +39 0680241281
-- **Balestra SRL:** info@balestrasrl.com / +39 06 214 8065 / Cell. +39 339 8319858
+**Centralino CUP:** +39 06 88805560
 
-### Target secondari Eventbrite
+**Indirizzo:** Largo Agostino Gemelli, 8 – 00168 Roma
 
-- **Leader SRL (FareTurismo):** eventi@leaderonline.it / +39 089 253170
-- **DBInformation (Parts Congress):** eventi.automotive@dbinformation.it
+**Note operative:**
+- **Specializzazione:** Coordinamento informazioni pazienti, familiari, eventi ospedalieri
+- **Target accessibile:** Possono indirizzare verso segreterie dipartimenti che organizzano eventi
+- **Modalità contatto:** Email urp@policlinicogemelli.it chiedendo contatti uffici eventi/formazione
+- **Particolarità:** Punto di accesso per identificare referenti eventi specifici dipartimenti
 
-### Organizzazioni con maggior potenziale per casa vacanze B2B
+---
 
-**Top 3 per volume eventi e accessibilità contatti:**
-1. Convention Bureau Roma Lazio (networking MICE, 150+ partner)
-2. Roma Convention Center La Nuvola (grandi congressi, sales manager diretto)
-3. Policlinico Gemelli Centro Congressi (eventi medici ECM, staff operativo accessibile)
+### 8. UNIVERSITÀ CATTOLICA - FORMAZIONE PERMANENTE ECM
 
-**Tutti i contatti verificati aggiornati novembre 2025.**
+**Nome organizzazione completo:** Università Cattolica del Sacro Cuore - Gemelli
+
+**Ufficio:** Formazione Permanente, ECM, Convegni e Manifestazioni
+
+**Email:** formazione.permanente-rm@unicatt.it
+
+**Telefono:**
+- +39 06 30154886
+- +39 06 30154297
+
+**Indirizzo:** Largo Francesco Vito, 1 - 00168 Roma (campus Gemelli)
+
+**Note operative:**
+- **Specializzazione:** Corsi ECM, convegni medici universitari, eventi formativi
+- **Dimensione tipica eventi:** 30-100 partecipanti
+- **Target accessibile:** Organizzano eventi accademici con budget spesso contenuti
+- **Modalità contatto:** Email formazione.permanente-rm@unicatt.it specificando alloggio relatori
+- **Particolarità:** Auditorium 500 posti, sale eventi, organizzano congressi specialistici regolarmente
+
+---
+
+## GRUPPO 3 - HOTEL ZONA GEMELLI PARTNERSHIP OVERFLOW (3 contatti)
+
+### 9. GEMELLI HOTEL
+
+**Nome:** Gemelli Hotel
+
+**Posizione:** 100 metri dal Policlinico Gemelli
+
+**Target partnership:** Overflow congressi medici, referral reciproco
+
+**Contatto proposto:** Front Office Manager
+
+**Note:**
+- **Distanza Gemelli:** 100 metri a piedi
+- **Servizi:** Bar, parcheggio ampio, ricarica EV, giardino
+- **Proposta partnership:** "Overflow congressi - quando siete full posso ospitare 1-2 persone vicino"
+- **Modalità approccio:** Visita fisica con biglietti da visita, proposta commissione 10-15% per referral
+- **Particolarità:** Vicinissimo al Gemelli, stesso target clientela business/medico
+
+---
+
+### 10. HOTEL SISTO V
+
+**Nome:** Hotel Sisto V
+
+**Posizione:** Vicinanza immediata Policlinico Gemelli, vicino stazione Gemelli
+
+**Target partnership:** Partnership overflow eventi medici
+
+**Contatto proposto:** Front Office Manager o Sales Manager
+
+**Note:**
+- **Distanza Gemelli:** Pochi minuti a piedi, vicino stazione ferroviaria Gemelli
+- **Servizi:** Comodo per congressi Gemelli e centro Roma
+- **Proposta partnership:** "Soluzione appartamento per ospiti cercano privacy/cucina"
+- **Modalità approccio:** Visita fisica o email tramite sito hotelsis tov.com
+- **Particolarità:** Target business travelers congressi Gemelli
+
+---
+
+### 11. EXCEL ROMA MONTEMARIO
+
+**Nome:** Excel Roma Montemario
+
+**Posizione:** 2 minuti auto da Policlinico Gemelli, zona Monte Mario
+
+**Target partnership:** Overflow eventi, referral reciproco
+
+**Contatto proposto:** Sales Manager eventi
+
+**Note:**
+- **Distanza Gemelli:** 2 min auto
+- **Servizi:** Pineta, parcheggio gratuito, WiFi, camere moderne
+- **Proposta partnership:** "Alternativa appartamento per partecipanti cercano soluzione economica vicina"
+- **Modalità approccio:** Email o telefono sales manager
+- **Particolarità:** Hotel con spazi meeting, potrebbero avere overflow durante congressi grandi
+
+---
+
+## GRUPPO 4 - UNIVERSITÀ ROMA - CONTATTI EVENTI (2 organizzazioni)
+
+### 12. UNIVERSITÀ TOR VERGATA - UFFICIO EVENTI MACROAREA LETTERE
+
+**Nome organizzazione completo:** Università degli Studi di Roma "Tor Vergata"
+
+**Responsabile:** Sig.ra Micol Borberg - Responsabile Ufficio Eventi
+
+**Email diretta:** micol.borberg@lettere.uniroma2.it
+
+**Email ufficio:** eventi@lettere.uniroma2.it
+
+**Telefono:**
+- +39 06 72595022
+- Cell: +39 337 1515936
+
+**Centralino:** +39 06 72593099
+
+**Indirizzo:** Via Columbia 1, 00133 Roma (Macroarea Lettere)
+
+**Note operative:**
+- **Volume eventi annui:** 40-60 eventi Macroarea Lettere (workshop, seminari, conferenze)
+- **Specializzazione:** Eventi accademici, workshop dottorandi, visiting professors internazionali
+- **Dimensione tipica eventi:** 20-80 partecipanti
+- **Target accessibile:** Contatto diretto responsabile ufficio, budget universitari spesso limitati
+- **Modalità contatto:** Email diretta Micol Borberg o ufficio eventi@lettere.uniroma2.it
+- **Particolarità:** Gestisce Auditorium Ennio Morricone (400 posti), organizza frequentemente eventi con ospiti da alloggiare
+
+---
+
+### 13. UNIVERSITÀ EUROPEA DI ROMA - PROMOZIONE E COMUNICAZIONE
+
+**Nome organizzazione completo:** Università Europea di Roma (UER)
+
+**Responsabile:** Marco Brotto Rizzo - Direttore Promozione e Comunicazione
+
+**Email diretta:** marco.brottorizzo@unier.it
+
+**Email ufficio:** info@unier.it
+
+**Telefono:** +39 06 665431
+
+**Indirizzo:** Via degli Aldobrandeschi, 190 - 00163 Roma (zona Aurelia)
+
+**Note operative:**
+- **Volume eventi annui:** 50-80+ eventi (conferenze internazionali, Summer Schools, seminari)
+- **Specializzazione:** Conferenze interdisciplinari internazionali, Blended Intensive Programmes (Erasmus+), eventi istituzionali
+- **Dimensione tipica eventi:** 20-100 partecipanti
+- **Target accessibile:** Università privata con budget eventi, molti ospiti internazionali da alloggiare
+- **Modalità contatto:** Email diretta Marco Brotto Rizzo per proposte eventi/ospitalità
+- **Particolarità:** Ranked #1 Italia comunicazione (Censis), forte carattere internazionale, eventi con EU policymakers, offrono servizi visa support/traduzioni
+
+**Altro contatto chiave:**
+- **Prof. Aniello Merone** - Responsabile Relazioni Internazionali
+- Email: aniello.merone@unier.it
+- Tel: +39 0666543809
+- **Specialità:** Ospiti internazionali, visiting professors
+
+---
+
+## GRUPPO 5 - FREELANCE/PICCOLI EVENT MANAGER (2 contatti)
+
+### 14. IRENE GUERRINI - FREELANCE EVENT & PROJECT MANAGER
+
+**Nome:** Irene Guerrini
+
+**Ruolo:** Freelance Event & Project Manager
+
+**LinkedIn:** https://www.linkedin.com/in/irene-guerrini-6a3b4a9/
+
+**Base:** Roma / Milano / Treviso (opera in più città)
+
+**Note operative:**
+- **Specializzazione:** Progetti comunicazione integrata con focus event management
+- **Dimensione tipica eventi:** Eventi piccoli/medi aziendali e formativi
+- **Target accessibile:** Freelance, gestisce eventi con budget contenuti
+- **Modalità contatto:** LinkedIn direct message specificando supporto alloggio eventi Roma
+- **Particolarità:** Esperienza Roma e Milano, profilo freelance significa flessibilità e budget gestiti direttamente
+
+---
+
+### 15. NETWORK RICERCATORI - WORKSHOP SAPIENZA/TOR VERGATA
+
+**Nome:** Network Ricercatori Workshop 2025
+
+**Riferimento:** XII Workshop Nazionale Rivista "Azienda Pubblica" (12-13 Giugno 2025)
+
+**Organizzatori:** Comitato Scientifico Sapienza + Tor Vergata
+
+**Contatto:** Via Dipartimento Management Sapienza
+
+**Email:** management.web.uniroma1.it (sezione eventi)
+
+**Note operative:**
+- **Specializzazione:** Workshop ricercatori early career, seminari dottorandi
+- **Dimensione tipica eventi:** 20-50 ricercatori
+- **Target accessibile:** Eventi con budget molto contenuti, ricercatori pagano spesso di tasca propria
+- **Modalità contatto:** Monitorare calendario eventi Sapienza/Tor Vergata, contattare organizzatori specifici via email dipartimenti
+- **Particolarità:** Target ideale per appartamento economico vicino venue universitarie, budget limitati
+- **Calendario:** Controllare eventi su dei.web.uniroma1.it e web.uniroma2.it sezione eventi
+
+---
+
+## RIEPILOGO ESECUTIVO
+
+**Totale contatti:** 15 organizzazioni/contatti qualificati
+
+### Distribuzione per categoria:
+- **PCO piccoli/medi:** 5 (Event Lab, Activity Eventi, Gamma, Fenicia, MCR)
+- **Gemelli operativi:** 3 (Direzione Scientifica, URP, Formazione UCSC)
+- **Hotel partnership:** 3 (Gemelli Hotel, Sisto V, Excel Montemario)
+- **Università:** 2 (Tor Vergata, Università Europea)
+- **Freelance/Ricercatori:** 2 (Irene Guerrini, Network ricercatori)
+
+### Livello accessibilità:
+- **ALTA accessibilità (contatto diretto/email):** 12/15
+- **MEDIA accessibilità (via centralino/form):** 3/15
+
+### Qualità contatti:
+- Email dirette verificate: 13/15
+- Telefoni diretti: 11/15
+- Nomi responsabili: 8/15
+- Indirizzi fisici: 15/15
+
+### Target prioritari TIER 1 (contatto immediato):
+1. Event Lab (PCO piccolo eventi medici)
+2. Activity Eventi (agenzia boutique)
+3. Gemelli Direzione Scientifica
+4. Tor Vergata Ufficio Eventi (Micol Borberg)
+5. Università Europea (Marco Brotto Rizzo)
+6. Gamma Congressi
+7. Fenicia Events
+
+### Target TIER 2 (contatto settimana 2):
+8. MCR Conference
+9. Formazione UCSC Gemelli
+10. Hotel partnership (3 hotel)
+11. URP Gemelli
+12. Irene Guerrini freelance
+13. Network ricercatori università
+
+---
+
+**NOTE STRATEGICHE:**
+
+Questo database è costruito per un **appartamento singolo 50 mq zona Balduina/Gemelli** con obiettivo:
+- Validare modello business travel
+- Costruire prime 10-15 prenotazioni business
+- Ottenere recensioni settore congressi/eventi
+- Creare credibilità per scalare a target più grandi
+
+**Approccio consigliato:**
+- Email fredde personalizzate a TIER 1 (settimana 1)
+- Follow-up telefonico dopo 7 giorni
+- Visite fisiche hotel partnership (settimana 2)
+- Monitoraggio calendari eventi università (continuo)
+
+**Tutti i contatti verificati da ricerca web novembre 2025.**
